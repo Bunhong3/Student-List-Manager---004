@@ -8,12 +8,12 @@
 </head>
 <body class="bg-gradient-to-br from-blue-50 to-purple-100 min-h-screen flex items-center justify-center">
   <div class="bg-white p-6 rounded-xl shadow-xl w-full max-w-3xl">
-    <h1 class="text-2xl font-bold mb-4 text-center flex items-center justify-center gap-2">
+    <h1 class="text-2xl font-bold mb-4 text-center flex items-center justify-center  gap-2">
       🎓 Student List Manager
     </h1>
 
     <div class="flex flex-col md:flex-row gap-3 mb-4">
-      <input id="studentName" type="text" placeholder="Student Name" class="border border-gray-400  p-2 rounded-xl w-full md:w-1/2" />
+      <input id="studentName" type="text" placeholder="Student Name" class="border border-gray-400  p-2 rounded-xl w-full flex-1 md:w-1/2" />
       <input id="studentGrade" type="text" placeholder="Grade (A, B, C...)" class="border border-gray-400 p-2 rounded-xl w-full flex-1 md:w-1/2" />
       <button onclick="addStudent()" class="bg-blue-600 text-white px-4 py-2 rounded-xl transition-all hover:bg-blue-700">+ Add Student</button>
     </div>
@@ -27,7 +27,7 @@
     <div>
       <h2 class="text-lg font-semibold mb-3">📋 Students</h2>
       <div id="studentList" class="grid grid-cols-1 md:grid-cols-2 gap-4"></div>
-      <p class="mt-4 text-sm text-gray-600">Total Students: <span id="studentCount">0</span></p>
+      <p class="mt-4 text-sm font-bold text-gray-600">Total Students: <span id="studentCount">0</span></p>
     </div>
   </div>
   <script src="./src/js/main.js" ></script>
